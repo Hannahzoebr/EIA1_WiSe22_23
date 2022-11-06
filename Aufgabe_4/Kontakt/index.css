@@ -1,5 +1,5 @@
 
-ul {
+header ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -7,12 +7,12 @@ ul {
     background-color:lightgray;
 }
 
-li {
+header li {
     float: right;
 
 }
 
-li a {
+header li a {
     display: block;
     color: white;
     text-align: center;
@@ -32,35 +32,30 @@ li a img{
 
 }
 
-li a:hover {
+header li a:hover {
     background-color: rgb(222, 244, 252);
     color: #333;
     height: 56px;
-}
-
-video {
-    width: 500px;;
 }
 
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
 }
-h1 {
+header h1 {
     font-size: 180%;
     color: white;
     text-align: center;
 }
 
 footer img {
-width: 40px;
-padding-top: 5%;
-}
-
-footer ul {
-    list-style-type: none;
-    margin: 0;
-    padding-right: 450px;
-    overflow: hidden;
-    background-color:#d3d3d3;
+    width: 40px;
+    padding-top: 5%;
     }
+    
+footer ul {
+        display:flex;
+        align-items: center;
+        list-style-type: none;
+        background-color:#d3d3d3;
+        }
