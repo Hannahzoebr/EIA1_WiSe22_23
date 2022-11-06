@@ -63,4 +63,9 @@ div img {
         padding-right: 366px;
         overflow: hidden;
         background-color:#d3d3d3;
-        }
+    }
+
+    table {
+        display: block;;
+        
+    }

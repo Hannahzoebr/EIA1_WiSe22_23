@@ -25,13 +25,6 @@ header li a {
 
 }
 
-li a img{
-   width: 50px;
-   margin: 0;
-   padding: 0;
-
-}
-
 header li a:hover {
     background-color: rgb(222, 244, 252);
     color: #333;
@@ -53,9 +46,40 @@ footer img {
     padding-top: 5%;
     }
     
+
 footer ul {
-        display:flex;
-        align-items: center;
-        list-style-type: none;
-        background-color:#d3d3d3;
-        }
+    list-style-type: none;
+    margin: 0;
+    padding-right: 366px;
+    overflow: hidden;
+    background-color:#d3d3d3;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    padding: 8px 10px;
+    text-decoration: none;
+    height: 56px;
+    width: 150px;
+
+}
+
+li a img{
+   width: 50px;
+   margin: 0;
+   padding: 0;
+}
+
+li a:hover {
+    background-color: rgb(222, 244, 252);
+    color: #333;
+    height: 56px;
+}
