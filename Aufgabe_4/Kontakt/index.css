@@ -83,3 +83,12 @@ li a:hover {
     color: #333;
     height: 56px;
 }
+
+footer {
+    bottom: 0%;
+    position: relative;
+}
+
+div img {
+    width: 100%;
+    }
