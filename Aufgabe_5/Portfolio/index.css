@@ -1,37 +1,48 @@
 
-ul {
+header ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding-right: 18%;
     overflow: hidden;
     background-color:lightgray;
 }
 
-li {
+header li {
     float: right;
 }
 
-li a {
+header li a {
     display: block;
     color: white;
     text-align: center;
     font-family: 'Sono', sans-serif;
-    font-size: 40px;
-    padding: 8px 10px;
+    font-size: 35px;
     text-decoration: none;
     height: 56px;
     width: 250px;
 }
 
-li a img{
-   width: 50px;
+.logo {
+    width: 100px;
+}
+
+.logo:hover {
+    width: 100px;
+ }
+
+header li a img{
+   width: 55px;
    margin: 0;
    padding: 0;
 }
 
+header li a img:hover {
+    width: 10px;
+}
 
-li a:hover {
-    background-color: rgb(222, 244, 252);
+
+header li a:hover {
+    background-color: #def4fc;
     color: #333;
     height: 56px;
     width: 250px;
@@ -42,25 +53,46 @@ body {
     font-family: 'Sono', sans-serif;
     text-align: center;
 }
-h1 {
-    font-size: 180%;
-    color: white;
-    text-align: center;
+
+footer li a {
+    margin: 10%;
+    padding: 10%;
 }
 
 footer img {
-width: 40px;
-padding-top: 5%;
+    width: 40px;
+    opacity: calc(0.3);
+    display: flex;
+}
+
+footer img:hover {
+    opacity: calc(1) ;
 }
 
 footer ul {
     list-style-type: none;
-    margin: 0;
-    padding-right: 366px;
+    padding-right: 10px;
     overflow: hidden;
+    display: flex;
+    align-content: center;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer{
     background-color:#d3d3d3;
 }
 
+.icon {
+    width: 50px;
+    margin: 1%;
+}
+
+.icon:hover {
+    width: 50px;
+    transition: 0,2s;
+}
 
 .reihe3 {
     margin-bottom: 15px;
@@ -71,46 +103,39 @@ footer ul {
     transform: scale(115%);
 } 
 
-.reihe1{
+.reihe1 {
     margin-bottom: 10px;
     margin-top: 5px;
 }
 
-.reihe2{
+.reihe2 {
     margin-bottom: 10px;
+}
+
+.hoverbild:hover {
+    transition: 1s;
+    transform: scale(105%);
+}
+.banner {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+    width: 300px;
+    
+}
+.slideshow{
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%; 
 }
 
 div img {
     width: 100%;
-    
-    }
-
-
-
-    @keyframes slide{
-        0%{
-            background-image: url(../Slideshow/Kopie_2345exp.jpg);
-        }
-        25%{
-            background-image: url(../Slideshow/SUP.jpg);
-        }
-        30%{
-            background-image: url(../Slideshow/Schwimmen.jpg);
-        }
-        50%{
-            background-image: url(../Slideshow/OpaAussicht.jpg);
-        }
-        55%{
-            background-image: url(../Slideshow/Jetsky.jpg);
-        }
-        75%{
-            background-image: url(../Slideshow/Anna.jpg);
-        }
-        80%{
-            background-image: url(../Slideshow/aufmauer.jpg);
-        }
-        100%{
-            background-image: url(../Slideshow/JetskyPapa.jpg);
-        }
-    }
+}
 
