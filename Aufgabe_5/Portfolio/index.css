@@ -129,8 +129,8 @@ footer{
 }
 
 #slideshow{
-    width: 100%;
-    height: 510px;
+    width: 1330px;
+    height: 500px;
     overflow: hidden;
     margin: 0 auto;
     position: relative;
@@ -138,18 +138,18 @@ footer{
 
 .slide {
     float: left;
-    height: 510px;
-    width: 100%; 
+    height: 500px;
+    width: 1330px; 
 }
 
 div img {
-    height: 650px;
-    width: 100%; 
+    height: 500px;
+    width: 1330px; 
 }
 
 .slidewrapper {
     width: calc(100% * 5);
-    animation: slide 5s ease infinite;
+    animation: slide 18s ease infinite;
 }
 
 
