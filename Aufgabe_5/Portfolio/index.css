@@ -28,16 +28,14 @@ header li a {
 
 .logo:hover {
     width: 100px;
+    transition: 1s;
+    transform: scale(105%);
  }
 
 header li a img{
    width: 55px;
    margin: 0;
    padding: 0;
-}
-
-header li a img:hover {
-    width: 10px;
 }
 
 
@@ -130,18 +128,45 @@ footer{
     transform: scale(110%);    
 }
 
-.slideshow{
+#slideshow{
     width: 100%;
-    height: 600px;
+    height: 510px;
     overflow: hidden;
+    margin: 0 auto;
+    position: relative;
 }
 
-.wrapper {
-    display: flex;
+.slide {
+    float: left;
+    height: 510px;
     width: 100%; 
 }
 
 div img {
-    width: 100%;
+    height: 650px;
+    width: 100%; 
 }
 
+.slidewrapper {
+    width: calc(100% * 5);
+    animation: slide 5s ease infinite;
+}
+
+
+@keyframes slide {
+    20% {
+        margin-left: 0px;
+    }
+    40% {
+        margin-left: calc(-100% * 1);
+    }
+    60% {
+        margin-left: calc(-100% * 2);
+    }
+    80% {
+        margin-left: calc(-100% * 3);
+    }
+    100% {
+        margin-left: calc(-100% * 4);
+    }
+}
