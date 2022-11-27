@@ -1,33 +1,59 @@
-const germany = "Deutschland";
-const italy = "Italien";
-const france = "Frankreich";
-const spain = "Spanien";
-const population2022DE = 83803014;
-const population2020DE = 83651225;
-const population2022IT = 60505719;
-const population2020IT = 60505719;
-const population2022FR = 66050242;
-const population2020FR = 65202014;
-const population2022SP = 46467847;
-const population2020SP = 46745832;
+const Europa22: number = 750.58; 
 
-let ProzentDE =(1-population2020DE/population2022DE)*100;
-let ProzentIT =(1-population2020DE/population2022DE)*100;
-let ProzentFR =(1-population2020DE/population2022DE)*100;
-let ProzentSP =(1-population2020DE/population2022DE)*100;
+const Deutschland22: number = 83.75; 
+const Deutschland12: number = 80.84;
 
-console.log("In" + germany + "beträgt die aktuelle Einwohnerzahl" + population2022DE);
-console.log("In" + germany + "betrug die Einwohnerzahl 2020" + population2020DE);
-console.log("Die Einwohnerzahl in" + germany + "ist in den letzten 2 Jahren um" + ProzentDE + "% gestiegen.");
+const Frankreich22: number = 65.79;
+const Frankreich12: number = 63.73; 
 
-console.log("In" + italy + "beträgt die aktuelle Einwohnerzahl" + population2022IT);
-console.log("In" + italy + "betrug die Einwohnerzahl 2020" + population2020IT);
-console.log("Die Einwohnerzahl in" + italy + "ist in den letzten 2 Jahren um" + ProzentIT + "% gestiegen.");
+const Italien22: number = 60.59;
+const Italien12: number = 59.73;
 
-console.log("In" + france + "beträgt die aktuelle Einwohnerzahl" + population2022FR);
-console.log("In" + france + "betrug die Einwohnerzahl 2020" + population2020FR);
-console.log("Die Einwohnerzahl in" + france + "ist in den letzten 2 Jahren um" + ProzentFR + "% gestiegen.");
+const Kroatien22: number = 4.08;
+const Kroatien12: number = 4.30; 
 
-console.log("In" + spain + "beträgt die aktuelle Einwohnerzahl" + population2022SP);
-console.log("In" + spain + "betrug die Einwohnerzahl 2020" + population2020SP);
-console.log("Die Einwohnerzahl in" + spain + "ist in den letzten 2 Jahren um" + ProzentSP + "% gesunken.");
+
+const RelativDEzuEU: number = Math.abs((Deutschland22 / Europa22) * 100).toFixed(2);
+const RelativFRzuEU: number = Math.abs((Frankreich22 / Europa22) * 100).toFixed(2);
+const RelativITzuEU: number = Math.abs((Italien22 / Europa22) * 100).toFixed(2);
+const RelativKRzuEU: number = Math.abs((Kroatien22 / Europa22) * 100).toFixed(2);
+
+
+
+const DifferenzDE: number = Math.abs((Deutschland22 - Deutschland12).toFixed(2);
+const DifferenzFR: number = Math.abs((Frankreich22 - Frankreich12).toFixed(2);
+const DifferenzIT: number = Math.abs((Italien22 - Italien12).toFixed(2);
+const DifferenzKR: number = Math.abs((Kroatien22 -Kroatien12).toFixed(2);
+
+
+
+const WachstumsrateDE12: number = Math.abs((DifferenzDE / Deutschland22).toFixed(2);
+const WachstumsrateFR12: number = Math.abs((DifferenzFR / Frankreich22).toFixed(2);
+const WachstumsrateIT12: number = Math.abs((DifferenzIT / Italien22).toFixed(2);
+const WachstumsrateKR12: number = Math.abs((DifferenzKR / Kroatien22).toFixed(2);
+
+
+
+console.log("Gesamtzahl Einwohnerinnen und Einwohner in Deutschland in 2022" + ": " + Deutschland22 + " Mio");
+console.log("Realtiv zur Gesamtzahl in der EU 2022" + ": " + RelativDEzuEU + "%");
+console.log("Wachstumsrate seit 2012" + ": " + WachstumsrateDE12 + "%");
+console.log("Wachstumsrate gesamt zwischen 2012 und 2022" + ": " + DifferenzDE + " Mio");
+
+
+
+console.log("Gesamtzahl der Einwohnerinnen und Einwohner in Frankreich in 2022" + ": " + Frankreich22 + " Mio");
+console.log("Relativ zur Gesamtzahl in der EU 2022" + ": " + RelativFRzuEU + "%");
+console.log("Wachstumsrate seit 2012" + ": " + WachstumsrateFR12 + "%");
+console.log("Wachstumsrate gesamt zwischen 2012 und 2022" + ": " + DifferenzFR + " Mio");
+
+
+console.log("Gesamtzahl der Einwohnerinnen und Einwohner in Italien in 2022" + ": " + Frankreich22 + " Mio");
+console.log("Relativ zur Gesamtzahl in der EU 2022" + ": " + RelativITzuEU + "%");
+console.log("Wachstumsrate seit 2012" + ": " + WachstumsrateIT12 + "%");
+console.log("Wachstumsrate gesamt zwischen 2012 und 2022" + ": " + DifferenzIT + " Mio");
+
+
+console.log("Gesamtzahl der Einwohnerinnen und Einwohner in Kroatien in 2022" + ": " + Kroatien22 + " Mio");
+console.log("Relativ zur Gesamtzahl in der EU 2022" + ": " + RelativKRzuEU + "%");
+console.log("Wachstumsrate seit 2012" + ": " + WachstumsrateKR12 + "%");
+console.log("Wachstumsrate gesamt zwischen 2012 und 2022" + ": " + DifferenzKR + " Mio");
