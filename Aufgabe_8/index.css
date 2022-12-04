@@ -12,8 +12,7 @@ html, body {
   
   h1 {
     color: #fff;
-    font-size: 5vw;
-    letter-spacing: 6px;
+    font-size: 70px;
   }
   
   .pad {
@@ -55,7 +54,7 @@ html, body {
 
 .pad-1:before, .pad-2:before, .pad-3:before, .pad-4:before, .pad-5:before, .pad-6:before, .pad-7:before, .pad-8:before, .pad-9:before {
     content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    background: linear-gradient(45deg, #ff6666, #ffa052, #fffd70, #7ef94e, #63f5dd, #5571ff, #bd45de, #f955d5, #ff6666);
     position: absolute;
     background-size: 10000px;
     z-index: -1;
@@ -125,4 +124,13 @@ html, body {
   0% { background-position: 0 0; }
   50% { background-position: 400% 0; }
   100% { background-position: 0 0; }
+}
+
+img {
+  width: 70px;
+}
+
+img:hover {
+    transition: 1s;
+    transform: scale(120%);
 }
