@@ -1,99 +1,33 @@
-
-const button1 = document.getElementById("sound-1");
-
-button1.onclick = function () {
-    const audio = document.getElementById("clicksound1");
-    audio.pause();
-    audio.currentTime = 0;
-    audio.play();
-};
-
-
-const button2 = document.getElementById("sound-2");
-
-button2.onclick = function () {
-    const audio = document.getElementById("clicksound2");
-    audio.pause();
-    audio.currentTime = 0;
-    audio.play();
-};
-
-
-const button3 = document.getElementById("sound-3");
-
-button3.onclick = function () {
-    const audio = document.getElementById("clicksound3");
-    audio.pause();
-    audio.currentTime = 0;
-    audio.play();
-};
-
-
-const button4 = document.getElementById("sound-4");
-
-button4.onclick = function () {
-    const audio = document.getElementById("clicksound4");
-    audio.pause();
-    audio.currentTime = 0;
-    audio.play();
-};
-
-
-const button5 = document.getElementById("sound-5");
-
-button5.onclick = function () {
-    const audio = document.getElementById("clicksound5");
-    audio.pause();
-    audio.currentTime = 0;
-    audio.play();
-};
-
-
-const button6 = document.getElementById("sound-6");
-
-button6.onclick = function () {
-    const audio = document.getElementById("clicksound6");
-    audio.pause();
-    audio.currentTime = 0;
-    audio.play();
-};
-
-
-const button7 = document.getElementById("sound-7");
-
-button7.onclick = function () {
-    const audio = document.getElementById("clicksound7");
-    audio.pause();
-    audio.currentTime = 0;
-    audio.play();
-};
-
-
-const button8 = document.getElementById("sound-8");
-
-button8.onclick = function () {
-    const audio = document.getElementById("clicksound8");
-    audio.pause();
-    audio.currentTime = 0;
-    audio.play();
-};
-
-
-const button9 = document.getElementById("sound-9");
-
-button9.onclick = function () {
-    const audio = document.getElementById("clicksound9");
-    audio.pause();
-    audio.currentTime = 0;
-    audio.play();
-};
-
-const button = document.getElsementById("random_play");
-
-button.onclick = function () {
-    const audio = document.getElementById("clicksound");
-    audio.pause();
-    audio.currentTime = 0;
-    audio.play();
-    Array.audio;
-};
+var Sounds = [(".A.mp3"), ("./C.mp3"), ("./F.mp3"), ("./G.mp3"),
+    ("./hihat.mp3"), ("./kick.mp3"), ("./laugh-1.mp3"), ("./laugh-2.mp3"),
+    ("./snare.mp3")];
+var beat = [Sounds[4], Sounds[5], Sounds[8]];
+var zaehler = 0;
+//Funktionen// 
+window.addEventListener("load", addClickListenersDrumPad);
+function playSample(soundQuelle) {
+    var sound = new Audio(soundQuelle);
+    sound.play();
+}
+function playBeat() {
+    setInterval(function () {
+        playSample(beat[zaehler]);
+        zaehler++;
+        if (zaehler === 3) {
+            zaehler = 0;
+        }
+    }, 500);
+}
+function addClickListenersDrumPad() {
+    document.querySelector("#button1").addEventListener("click", function () { playSample(Sounds[0]); });
+    document.querySelector("#button2").addEventListener("click", function () { playSample(Sounds[1]); });
+    document.querySelector("#button3").addEventListener("click", function () { playSample(Sounds[2]); });
+    document.querySelector("#button4").addEventListener("click", function () { playSample(Sounds[3]); });
+    document.querySelector("#button5").addEventListener("click", function () { playSample(Sounds[4]); });
+    document.querySelector("#button6").addEventListener("click", function () { playSample(Sounds[5]); });
+    document.querySelector("#button7").addEventListener("click", function () { playSample(Sounds[6]); });
+    document.querySelector("#button8").addEventListener("click", function () { playSample(Sounds[7]); });
+    document.querySelector("#button9").addEventListener("click", function () { playSample(Sounds[8]); });
+    document.querySelector(".play").addEventListener("click", function () { playBeat(); });
+}
+//# sourceMappingURL=aufgabe8.js.map

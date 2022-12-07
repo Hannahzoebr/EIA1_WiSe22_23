@@ -126,11 +126,14 @@ html, body {
   100% { background-position: 0 0; }
 }
 
-img {
-  width: 70px;
+.play {
+  width: 5px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
-img:hover {
+.play:hover {
     transition: 1s;
     transform: scale(120%);
 }

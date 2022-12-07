@@ -1,54 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drumpad</title>
+
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="index.css">
-    <script src="script.js"defer></script>
-    <title>Drum Pad</title>
 </head>
+
+
 <body>
+<h1>Click me</h1>
+    <div class="drumpad">
+        <div>
+            <button class="button" id="button1"></button>
+            <button class="button" id="button2"></button>
+            <button class="button" id="button3"></button>
+        </div>
+
+        <div>
+            <button class="button" id="button4"></button>
+            <button class="button" id="button5"></button>
+            <button class="button" id="button6"></button>
+        </div>
+
+        <div>
+            <button class="button" id="button7"></button>
+            <button class="button"id="button8"></button>
+            <button class="button" id="button9"></button>
+        </div>
+    </div>
+        <div class="play">
+            <img src="play-button.png" alt="play-button">
+        </div>
     
+
 </body>
 </html>
-
-<h1>Click me</h1>
-
-<div class="pad">
-  <div class="box pad-1" type="button1" id="sound-1"></div>
-  <audio id="clicksound1" src="sound/L08_task_material_assets_DrumPad_A.mp3" preload="auto"></audio>
-  
-  <div class="box pad-2" type="button2" id="sound-2"></div>
-  <audio id="clicksound2" src="sound/L08_task_material_assets_DrumPad_C.mp3" preload="auto"></audio>
-  
-  <div class="box pad-3" type="button3" id="sound-3"></div>
-  <audio id="clicksound3" src="sound/L08_task_material_assets_DrumPad_F.mp3" preload="auto"></audio>
-
-
-
-  <div class="box pad-4" type="button4" id="sound-4"></div>
-  <audio id="clicksound4" src="sound/L08_task_material_assets_DrumPad_G.mp3" preload="auto"></audio>
-
-  <div class="box pad-5" type="button5" id="sound-5"></div>
-  <audio id="clicksound5" src="sound/L08_task_material_assets_DrumPad_hihat.mp3" preload="auto"></audio>
-
-  <div class="box pad-6" type="button6" id="sound-6"></div>
-  <audio id="clicksound6" src="sound/L08_task_material_assets_DrumPad_kick.mp3" preload="auto"></audio>
-
-
-  
-  <div class="box pad-7" type="button7" id="sound-7"></div>
-  <audio id="clicksound7" src="sound/L08_task_material_assets_DrumPad_laugh-1.mp3" preload="auto"></audio>
-
-  <div class="box pad-8" type="button8" id="sound-8"></div>
-  <audio id="clicksound8" src="sound/L08_task_material_assets_DrumPad_laugh-2.mp3" preload="auto"></audio>
-
-  <div class="box pad-9" type="button9" id="sound-9"></div>
-  <audio id="clicksound9" src="sound/L08_task_material_assets_DrumPad_snare.mp3" preload="auto"></audio>
-
-</div>
-
-<img type="button" id="random_play" src="./Image/play-button.png" alt="Play">
-<audio id="clicksound" src="sound/L08_task_material_assets_DrumPad_hihat.mp3" src="sound/L08_task_material_assets_DrumPad_kick.mp3" src="sound/L08_task_material_assets_DrumPad_snare.mp3" preload="auto"></audio> 
-
