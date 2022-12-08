@@ -1,6 +1,6 @@
-var Sounds: string [] = [("A.mp3"), ("C.mp3"), ("F.mp3"), ("G.mp3"), 
-("hihat.mp3"), ("kick.mp3"), ("laugh-1.mp3"), ("laugh-2.mp3"), 
-("snare.mp3")];
+var Sounds = [("./sound/A.mp3"), ("./sound/C.mp3"), ("./sound/F.mp3"), ("./sound/G.mp3"),
+    ("./sound/hihat.mp3"), ("./sound/kick.mp3"), ("./sound/laugh-1.mp3"), ("./sound/laugh-2.mp3"),
+    ("./sound/snare.mp3")];
 
 var beat: string []= [Sounds [4], Sounds [5], Sounds [8]];
 
