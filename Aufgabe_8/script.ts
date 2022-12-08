@@ -1,11 +1,14 @@
-var Sounds: string [] = [("./sound/A.mp3"), ("./sound/C.mp3"), ("./sound/F.mp3"), ("./sound/G.mp3"), 
-("./sound/hihat.mp3"), ("./sound/kick.mp3"), ("./sound/laugh-1.mp3"), ("./sound/laugh-2.mp3"), 
-("./sound/snare.mp3")];
+var Sounds: string [] = [("A.mp3"), ("C.mp3"), ("F.mp3"), ("G.mp3"), 
+("hihat.mp3"), ("kick.mp3"), ("laugh-1.mp3"), ("laugh-2.mp3"), 
+("snare.mp3")];
 
 var beat: string []= [Sounds [4], Sounds [5], Sounds [8]];
 
 var zaehler: number = 0;
 
+
+
+//Funktionen// 
 
 window.addEventListener("load", addClickListenersDrumPad);
 
@@ -36,4 +39,5 @@ document.querySelector("#button7").addEventListener("click", function(): void {p
 document.querySelector("#button8").addEventListener("click", function(): void {playSample(Sounds[7]); });
 document.querySelector("#button9").addEventListener("click", function(): void {playSample(Sounds[8]); });
 document.querySelector(".play").addEventListener("click", function (): void {playBeat(); });
+
   }

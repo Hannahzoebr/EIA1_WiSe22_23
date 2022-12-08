@@ -15,7 +15,7 @@ html, body {
     font-size: 70px;
   }
   
-  .pad {
+  .drumpad {
     width: 400px;
     display: flex;
     justify-content: space-between;
