@@ -1,6 +1,6 @@
 
 var Sounds = [("./sound/A.mp3"), ("./sound/C.mp3"), ("./sound/F.mp3"), ("./sound/G.mp3"),
-("./sound/hihat.mp3"), ("./sound/kick.mp3"), ("./sound/laugh-1.mp3"), ("./sound/laugh-2.mp3"),
+("./sound/HiHat.mp3"), ("./sound/kick.mp3"), ("./sound/laugh-1.mp3"), ("./sound/laugh-2.mp3"),
 ("./sound/snare.mp3")];
 
 var beat: string []= [Sounds [4], Sounds [5], Sounds [8]];
@@ -28,7 +28,8 @@ window.addEventListener("load", addClickListenersDrumPad);
     clearInterval(beatremix);
 
     if (document.querySelector("#stop").getAttribute("class") == "far fa-stop") {
-        document.querySelector("#play").setAttribute("class", "far fa-play");
+        
+      document.querySelector("#play").setAttribute("class", "far fa-play");
     }
 
     beat = [];
@@ -85,9 +86,10 @@ function playBeat(audio: string): void {
         document.querySelector(".pad-7").addEventListener("click", function(): void {playSample(Sounds[6]); });
         document.querySelector(".pad-8").addEventListener("click", function(): void {playSample(Sounds[7]); });
         document.querySelector(".pad-9").addEventListener("click", function(): void {playSample(Sounds[8]); });
-
+       
         document.querySelector("#play").addEventListener("click", function(): void {playBeat(beat[0]); });
         document.querySelector("#play").addEventListener("click", function(): void {playBeat(beat[1]); });
         document.querySelector("#play").addEventListener("click", function(): void {playBeat(beat[2]); });
+        
         document.querySelector("#remix").addEventListener("click", function (): void {REMIX(); });
      }
