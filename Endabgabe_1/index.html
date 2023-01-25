@@ -1,32 +1,87 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <title>Endabgabe Hannah Brauner</title>
     <link rel="stylesheet" href="index.css">
     <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
-
-    <title>To-Do App</title>
-
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Lobster+Two:ital@1&family=PT+Mono&family=Space+Grotesk:wght@600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  
-<h1>Quiz on Important Facts</h1>
-<div class="quiz-container">
-  <div id="quiz"></div>
-</div>
-<button id="previous">Previous Question</button>
-<button id="next">Next Question</button>
-<button id="submit">Submit Quiz</button>
-<div id="results"></div>
-<div id="atten"></div>
+    <div class="Start">
+        <div class="StartButton">
+            <p>Let's Start</p>
+        </div>
+    </div>
 
+
+    <div class="categories-container">
+     
+      <div class="categories">
+          <div class="category_gemischt">
+              <p>Gemischt</p>
+         </div>
+         
+          <div class="category_typescript">
+              <p>TypeScript</p>
+          </div>
+
+         <div class="category_html">
+            <p>Html</p>
+          </div>
+
+          <div class="category_css">
+              <p>CSS</p>
+          </div>
+        </div>
+  </div>
+
+
+    <div class="quiz">
+        <div class="question-container">
+            <p class="question"></p>
+        </div>
+        <div class="answers">
+            <div class="option">
+                <p class="answer"></p>
+            </div>
+            <div class="option">
+                <p class="answer"></p>
+            </div>
+            <div class="option">
+                <p class="answer"></p>
+            </div>
+        </div>
+        <div class="response">
+            <div class="info">
+                <span>
+                </span>
+
+            </div>
+            <div class="weiter">
+                <p>Weiter</p>
+            </div>
+        </div>
+        <div class="Points">
+            <p class="counter">Punkte: 0</p>
+        </div>
+    </div>
+    <div class="result_container">
+        <p class="result"></p>
+        <div class="restart">
+            <p>Neustart</p>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <p>Hannah Brauner</p>
+        </div>
+    </footer>
 </body>
+
 </html>
