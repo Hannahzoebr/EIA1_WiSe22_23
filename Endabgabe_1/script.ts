@@ -1,3 +1,5 @@
+/* Klicksounds wurden in Javascript bearbeitet*/ 
+
 interface question {
   frage: string;
   antwort: string[];

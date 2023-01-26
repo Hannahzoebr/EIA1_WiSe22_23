@@ -10,21 +10,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Lobster+Two:ital@1&family=PT+Mono&family=Space+Grotesk:wght@600&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-    <div class="Start">
+    <div class="Start" id="play" onclick="play('sound-chat')">
         <div class="StartButton">
                 <p>Welcome:) <br>Let's Start!</br></p>
         </div>
     </div>
 
 
-    <div class="categories-container">
+    <div class="categories-container" onclick="play('sound-chat')">
      
-      <div class="categories">
-          <div class="category_gemischt">
-              <p>Gemischt</p>
+      <div class="categories" >
+          <div class="category_gemischt" >
+              <p id="hallo"> Gemischt</p>
          </div>
          
           <div class="category_typescript">
@@ -46,7 +47,7 @@
         <div class="question-container">
             <p class="question"></p>
         </div>
-        <div class="answers">
+        <div class="answers" onclick="play('sound-oiseaux')">
             <div class="option">
                 <p class="answer"></p>
             </div>
@@ -63,7 +64,7 @@
                 </span>
 
             </div>
-            <div class="weiter">
+            <div class="weiter" onclick="play('sound-oiseaux')">
                 <p>Weiter</p>
             </div>
         </div>
@@ -73,15 +74,34 @@
     </div>
     <div class="result_container">
         <p class="result"></p>
-        <div class="restart">
+        <div class="restart" onclick="play('sound-chat')">
             <p>Neustart</p>
         </div>
     </div>
+    <audio id="bubble" src="./Sound/bubble-click.wav"></audio>
     <footer>
         <div>
-            <p>Hannah Brauner</p>
+            <p>Hannah Brauner - 272015</p>
         </div>
     </footer>
+
+
+    <audio id="sound-oiseaux" src="./Sound/bubble-click.wav" autostart="false"></audio>
+    
+    <audio id="sound-chat" src="./Sound/click.wav" autostart="false"></audio>
+    
+    
+    
+    
+    
+
+
 </body>
+
+
+
+
+
+
 
 </html>
