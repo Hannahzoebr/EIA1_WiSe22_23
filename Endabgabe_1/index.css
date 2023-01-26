@@ -63,10 +63,17 @@ body {
         color: #ffffff; 
       }
 
+.überschrift{
+  color: rgb(118, 118, 118);
+  text-align: center;
+  font-size: 7vh ;
+  font-family: 'Roboto Mono', monospace;
+}
+
 .categories-container {
   height: 60vh;
   width: 70%;
-  padding-top: 25vh;
+  padding-top: 10vh;
   margin: 0 auto;
   display: none; 
 }
