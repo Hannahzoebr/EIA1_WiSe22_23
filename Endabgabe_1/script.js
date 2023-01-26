@@ -65,7 +65,7 @@ function resetAll() {
     {
         "frage": "Was ist das richtige HTML-Element zum Einfügen eines Zeilenumbruchs?",
         "antwort": ["br", "break", "Ib"],
-        "richtigeAntwort": "<br>",
+        "richtigeAntwort": "br",
         "link": "https://lerneprogrammieren.de/html-fragen-bewerbungsgespraech/"
     }
     ];
