@@ -6,28 +6,33 @@ body {
 }
 
   footer {
-    height: 12vh;
+    height: 5px;
     background: linear-gradient(to left,#d7f6ff, #fff9ac );
     display: table;
     width: 100%; 
     border-style: solid;
-    border-width: 3px;
+    border-width: 1,5px;
     border-color: rgb(255, 255, 255); 
     position: absolute; 
-    padding-bottom: 0vh;
+    bottom: 0vh;
   }
     footer div {
       display: table-cell;
       vertical-align: middle;
       text-align: center; 
+      position: table; 
+      bottom: 0vh;
+      text-align: center;
     }
       footer div p {
-        color: #3a3a3a;
-        font-size: 1.2em; 
+        color:rgb(57, 57, 57);
+        font-size: 0,5em; 
+        text-align: center;
+    
       }
 
 .Start {
-  padding-top: 25vh;
+  padding-top: 35vh;
   height: 60vh; 
 }
   
@@ -59,9 +64,9 @@ body {
       }
 
 .categories-container {
-  padding-top: 20vh;
   height: 60vh;
   width: 70%;
+  padding-top: 25vh;
   margin: 0 auto;
   display: none; 
 }
@@ -132,6 +137,7 @@ body {
   margin: 0 auto;
   grid-template-columns: 1fr 1fr 1fr;
  }
+
   .answers .option {
     height: 100px;
     width: 100%;
@@ -160,6 +166,7 @@ body {
       .answers .option:hover p {
         color: #ffffff; 
       }
+
 
 .response {
   width: 70%;
@@ -278,7 +285,7 @@ body {
   } 
   
   .result_container .restart:hover {
-    background-color: #3a3a3a;
+    background-color:  rgb(118, 118, 118);;
     border-style: solid;
     border-width: 3px;
     border-color: rgb(255, 255, 255); 

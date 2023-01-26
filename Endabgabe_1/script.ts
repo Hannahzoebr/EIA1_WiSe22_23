@@ -5,7 +5,8 @@ interface question {
   link: string;
 }
 /*
-  Sieben HTML Fragen werden erstellt + deren Antwortmöglichkeiten
+  Sieben HTML Fragen werden erstellt + deren Antwortmöglichkeiten,
+  leider funktionierten keine zeichen wie <> und "" bei den Antworten, somit fehlt dies z.B. bei <!DOCTYPE html> 
 */
 let html_question: question[] = [
   {
@@ -22,13 +23,13 @@ let html_question: question[] = [
 },
 {
     "frage": "Was befindet sich meistens innerhalb des <section> Tags?",
-    "antwort": ["Die Navigation... <nav>", "Ein Artikel... <article>", "Der Head Bereich... <head>", "Der Body Bereich... <body>"],
+    "antwort": ["Die Navigation... <nav>", "Ein Artikel... <article>", "Der Head Bereich... <head>"],
     "richtigeAntwort": "Ein Artikel.... <article>",
     "link": "https://www.goconqr.com/de/quiz/4751575/html-quiz-grundlagen"
 },
 {
     "frage": "Stimmt es, das zu HTML IMMER eine CSS Datei gehört?",
-    "antwort": ["Wahr", "Falsch"],
+    "antwort": ["Wahr", "Falsch", "teilweise richtig"],
     "richtigeAntwort": "Falsch",
     "link": "https://www.goconqr.com/de/quiz/4751575/html-quiz-grundlagen"
 },
@@ -40,7 +41,7 @@ let html_question: question[] = [
 },
 {
     "frage": "Welches ist das richtige HTML-Element für die größte Überschrift",
-    "antwort": ["h6", "h1", "heading", "head"],
+    "antwort": ["h6", "h1", "heading"],
     "richtigeAntwort": "h1",
     "link": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML"
 },
@@ -52,13 +53,12 @@ let html_question: question[] = [
 }
 ];
 /*
-  Sieben css Fragen werden erstellt + deren Antwortmöglichkeitenleider,
-  funktionierten keine zeichen wie <> und "" somit fehlt dies z.B. bei <!DOCTYPE html>
+  Sieben css Fragen werden erstellt + deren Antwortmöglichkeitenleider
 */
 let css_question: question[] = [
   {
       "frage": "Welche Eigenschaft wird verwendet, um die Textfarbe eines Elements zu ändern?",
-      "antwort": ["fontcolor:", "textcolor:", "color:", "font-color:"],  
+      "antwort": ["fontcolor:", "textcolor:", "color:"],  
       "richtigeAntwort": "color:",
       "link": "https://www.cssportal.com/css-quiz/"
   },
@@ -94,57 +94,56 @@ let css_question: question[] = [
   },
   {
       "frage": "Welche CSS-Eigenschaft steuert die Textgröße?",
-      "antwort": ["font-height", "text-size", "font-size", "text-style"],
+      "antwort": ["font-height", "text-size", "font-size"],
       "richtigeAntwort": "font-size",
       "link": "https://www.cssportal.com/css-quiz/"
   }
 ];
  /*
-  Sieben typescript Fragen werden erstellt + deren Antwortmöglichkeiten, 
-  leider funktionierten keine zeichen wie <> und "" somit fehlt dies z.B. bei <!DOCTYPE html>
+  Sieben typescript Fragen werden erstellt + deren Antwortmöglichkeiten
 */
 let typescript_question: question[] = [
   {
-      "frage": "Typescript ist Javascript sehr ähnlich",
-      "antwort": ["Ja", "Nein", "Typescript ist komplett gleich wie Javascript"],
-      "richtigeAntwort": "Ja",
-      "link": "https://www.w3schools.com/typescript/typescript_intro.php"
+      "frage": "Wer hat TypeScript entwickelt und entworfen?",
+      "antwort": ["Microsoft", "Amazon", "TypeScript"],          
+      "richtigeAntwort": "Microsoft",
+      "link": "https://www.proprofs.com/quiz-school/quizreport.php?title=3dq-typescript-test&sid=304252457"
   },
   {
-      "frage": "Wie viele einfache Typen gibt es in typescript?",
-      "antwort": ["7", "3", "4"],
-      "richtigeAntwort": "3",
-      "link": "https://www.w3schools.com/typescript/typescript_simple_types.php"
+      "frage": "Welches der folgenden ist das Schreibprinzip von TypeScript?",
+      "antwort": ["Gradual", "Duck", "Beide"],
+      "richtigeAntwort": "Beide",
+      "link": "https://www.proprofs.com/quiz-school/quizreport.php?title=3dq-typescript-test&sid=304252457"
   },
   {
-      "frage": "Können „null“ und „undefined“ wie andere Typen, z. B. „string“, verwendet werden?",
-      "antwort": ["Ja", "Den type „string“ gibt es nicht", "Nein"],
-      "richtigeAntwort": "Ja",
-      "link": "https://www.w3schools.com/typescript/typescript_null.php"
+      "frage": "Welche der folgenden ist eine Dateinamenerweiterung für TypeScript?",
+      "antwort": [".tsx", ".txt", ".nod"],
+      "richtigeAntwort": ".tsx",
+      "link": "https://www.proprofs.com/quiz-school/quizreport.php?title=3dq-typescript-test&sid=304252457"
   },
   {
-      "frage": "Was macht der Typ „boolean“?",
-      "antwort": ["Man gibt an, ob ein Wert „true“ oder „false“ ist", "Man gibt an, dass man bowlen gehen will", "Man gibt an, dass ein Wert zu groß ist"],
-      "richtigeAntwort": "Man gibt an, ob ein Wert „true“ oder „false“ ist",
-      "link": "https://www.w3schools.com/typescript/typescript_simple_types.php"
+      "frage": "Welche der folgenden Computerprogrammiersprachen haben die Erstellung von TypeScript beeinflusst?",
+      "antwort": [ "JavaScript", "C#", "Beide"],
+      "richtigeAntwort": "Beide",
+      "link": "https://www.tutorialsteacher.com/online-test/typeScript-test1"
   },
   {
-      "frage": "Was gibt der typ „string“ an?",
-      "antwort": ["Text Werte", "„String“ macht einen Strich", "Den Typ „String“ gibt es nicht"],
-      "richtigeAntwort": "Text Werte",
-      "link": "https://www.w3schools.com/typescript/typescript_simple_types.php"
+      "frage": "Die folgenden sind zurückportierte Funktionen von TypeScript, außer?",
+      "antwort": ["Classes", "„Methods", "Modules"],
+      "richtigeAntwort": "Methods",
+      "link": "https://www.proprofs.com/quiz-school/quizreport.php?title=3dq-typescript-test&sid=304252457"
   },
   {
-      "frage": "Was sind die Vorteile von Typescript?",
-      "antwort": ["Es hilft, den Code zu strukturieren", "Ermöglicht eine starke Typisierung", "Beide, der genannten Optionen"],
-      "richtigeAntwort": "Beide, der genannten Optionen",
-      "link": "https://www.communardo.de/blog/drei-gruende-warum-typescript-das-bessere-javascript-ist/"
+      "frage": " .... sind die Art, Code in TypeScript zu organisieren.",
+      "antwort": ["Method", "Modules", "Classes"],
+      "richtigeAntwort": "Modules",
+      "link": "https://www.proprofs.com/quiz-school/quizreport.php?title=3dq-typescript-test&sid=304252457/"
   },
   {
-      "frage": "Wer hat Typescript erfunden?",
-      "antwort": ["Anders Hejlsberg", "Genau Heijlsberg", "Richtig Heijlsberg"],
-      "richtigeAntwort": "Anders Hejlsberg",
-      "link": "https://www.edureka.co/blog/interview-questions/typescript-interview-questions/amp/"
+      "frage": "kann verwendet werden, um serverseitige und clientseitige Anwendungen zu schreiben. Wahr oder Falsch?",
+      "antwort": ["Wahr", "Falsch", "teilweise richtig"],
+      "richtigeAntwort": "Wahr",
+      "link": "https://www.tutorialsteacher.com/online-test/typeScript-test1"
   }
 ];
 
@@ -159,6 +158,7 @@ const response = document.querySelector(".response");
 const Punktestand: HTMLElement = document.querySelector(".counter");
 const resultContainer: HTMLElement = document.querySelector(".result_container");
 const result: HTMLElement = document.querySelector(".result");
+const footer: HTMLElement = document.querySelector(".footer");
 
 //Variable die für die Funktion gebraucht werden
 let rightanswer: string = "";
@@ -173,7 +173,7 @@ let ismixed: boolean = false;
 */
 function letsStart() {
   start.setAttribute('style', 'display:none');
-  categories.setAttribute('style', 'display:block')
+  categories.setAttribute('style', 'display:block');
 }
 
 /*
@@ -284,7 +284,7 @@ function answerclicked(x: number) {
   if (answeroption[x].innerHTML == rightanswer) {
       punkte++;
       Punktestand.innerHTML = "Punkte: " + String(punkte);
-      document.querySelector("span").innerHTML = "Das war Richtig :)";
+      document.querySelector("span").innerHTML = "Sehr gut! Das war Richtig :)";
   }
   else {
       document.querySelector("span").innerHTML = "Leider lagst du hier falsch :( <br>Noch Fragen? Schau<a href='" + currentcategory[currentquestion].link + "' target='_blank'>hier</a>";
