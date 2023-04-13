@@ -146,7 +146,7 @@ function resetAll() {
         },
         {
             "frage": "Die folgenden sind zurückportierte Funktionen von TypeScript, außer?",
-            "antwort": ["Classes", "„Methods", "Modules"],
+            "antwort": ["Classes", "Methods", "Modules"],
             "richtigeAntwort": "Methods",
             "link": "https://www.proprofs.com/quiz-school/quizreport.php?title=3dq-typescript-test&sid=304252457"
         },
